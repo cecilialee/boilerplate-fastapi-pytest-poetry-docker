@@ -1,0 +1,11 @@
+services:
+  app:
+    container_name: fastapi-poetry-docker
+    image: fastapi-poetry-docker
+    build:
+      context: .
+      dockerfile: Dockerfile
+      tags:
+        - "fastapi-poetry-docker"
+    ports:
+      - "8000:80"
