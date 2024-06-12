@@ -1,9 +1,10 @@
-# FastAPI, Poetry, Docker Boilerplate
+# FastAPI, PyTest, Poetry, Docker Boilerplate
 
 ## Requirements
 
 - [Poetry](https://python-poetry.org/) for Python package and environment management.
 - [FastAPI](https://fastapi.tiangolo.com/) for Python RESTful API.
+- [Pytest](https://docs.pytest.org/) for Pythong testing.
 - [Docker](https://www.docker.com/) for containerization and deployment.
 
 ## Prerequisites
@@ -88,7 +89,7 @@ Manually add the following config to `pyproject.toml` to use Poetry only for dep
 package-mode = false
 ```
 
-**Optional:** Add dependencies that are only needed for test and development, for example `pytest` and `ipykernel`.
+Add dependencies that are only needed for test and development.
 
 ```sh
 poetry add pytest ipykernel --group dev
