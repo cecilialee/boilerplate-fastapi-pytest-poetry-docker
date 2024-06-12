@@ -1,11 +1,11 @@
 services:
   app:
-    container_name: fastapi-poetry-docker
-    image: fastapi-poetry-docker
+    container_name: fastapi-pytest-poetry-docker
+    image: fastapi-pytest-poetry-docker
     build:
       context: .
       dockerfile: Dockerfile
       tags:
-        - "fastapi-poetry-docker"
+        - "fastapi-pytest-poetry-docker"
     ports:
       - "8000:80"

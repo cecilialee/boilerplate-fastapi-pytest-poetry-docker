@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "boilerplate-fastapi-poetry-docker"
+name = "boilerplate-fastapi-pytest-poetry-docker"
 version = "0.1.0"
-description = "FastAPI, Poetry, Docker Boilerplate"
+description = "FastAPI, Pytest, Poetry, Docker Boilerplate"
 authors = ["Cecilia Lee <ceciliahslee@gmail.com>"]
 readme = "README.md"
 package-mode = false
