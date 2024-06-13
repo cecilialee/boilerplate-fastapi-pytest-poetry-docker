@@ -18,3 +18,7 @@ api_router.include_router(items.router)
 api_router.include_router(users.router)
 
 app.include_router(api_router, prefix=settings.API_V1_STR)
+
+@app.get("/")
+async def root():
+    return {"message": "Hello World!"}
