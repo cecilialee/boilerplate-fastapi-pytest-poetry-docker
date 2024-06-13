@@ -1,10 +1,17 @@
 # FastAPI, PyTest, Poetry, Docker Boilerplate
 
+![Python](https://img.shields.io/badge/python-v3.12.3-3670A0.svg?&logo=python&logoColor=ffdd54)
+![FastAPI](https://img.shields.io/badge/fastapi-v0.111.0-005571.svg?&logo=fastapi)
+![Pytest](https://img.shields.io/badge/pytest-v8.2.2-439FDD.svg?&logo=pytest)
+![Poetry](https://img.shields.io/badge/poetry-v1.8.3-%233B82F6.svg?&logo=poetry)
+![Docker](https://img.shields.io/badge/docker-207MB-%230db7ed.svg?&logo=docker)
+
+
 ## Requirements
 
 - [Poetry](https://python-poetry.org/) for Python package and environment management.
 - [FastAPI](https://fastapi.tiangolo.com/) for Python RESTful API.
-- [Pytest](https://docs.pytest.org/) for Pythong testing.
+- [Pytest](https://docs.pytest.org/) for Python testing.
 - [Docker](https://www.docker.com/) for containerization and deployment.
 
 ## Prerequisites
@@ -39,6 +46,18 @@ By default the app services at http://127.0.0.1/, which is the localhost. The Sw
 
 > [!TIP]
 > The FastAPI local development mode has auto-reload enabled by default, so it will automatically reload the server when code changes are made. This is resource intensive and should only be used for development.
+
+Execute all tests.
+
+```
+poetry run pytest
+```
+
+Execute all tests with coverage report.
+
+```
+poetry run pytest --cov-report term-missing --cov=./app tests
+```
 
 ### Dockerization
 
@@ -92,7 +111,7 @@ package-mode = false
 Add dependencies that are only needed for test and development.
 
 ```sh
-poetry add pytest ipykernel --group dev
+poetry add pytest pytest-cov ipykernel --group dev
 ```
 
 #### Install Project Dependencies
